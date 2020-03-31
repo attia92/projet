@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+   <title>local</title>
+   <link rel="stylesheet" href="
+   C:\Users\lenovo g50\Desktop\sopat\style.css">
+   
+   <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+    
+   </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+              <img src="SOPAT1.jpg" alt="logo" width="60">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white font-weight-bolder" href="zone.html">zone geographique <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white font-weight-bolder" href="local.html">local</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white font-weight-bolder" href="tyc.html">type de contrat</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+       
+        <div id="carouselExampleControls"  class="carousel slide" style="height: 960px; max-height: 960pxpx;" data-ride="carousel">
+          <div class="carousel-inner" style="max-height: 100%;">
+            <div class="carousel-item active">
+              <img src="SOPAT1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="chikos.png" class="d-block w-100" alt="...">
+            </div>
+            
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <center>
+            <div id="cover">
+                <h2 >Local</h2>
+            </div>
+            <form name="forum">
+         <div class="che">
+            <h4>compteur</h4>
+            <input type="checkbox"name="compteur" > 
+                <label>soned</label>
+            <input type="checkbox"name="compteur" >
+                <label> steg</label>
+            </div>
+            <br>
+            <div class="che">
+                <h4>Visiblte</h4>
+                <input type="checkbox" name="visiblté" > 
+                    <label>facade en retrait</label>
+                <input type="checkbox"name="visiblté" >
+                    <label> denivellation du trottoir</label>
+                    <input type="checkbox" name="visiblté"> 
+                    <label>mobilier urbain genant la vue</label>
+                <input type="checkbox"name="visiblté" >
+                    <label> autre obstacle</label>
+               </div>
+               <br>
+               <textarea class="textaS" cols="50" rows="4">cite autre obstacle : </textarea>
+            <h4>Concurrence sur 200m²</h4>
+        <select class="list" id="Concurrence">
+            <option value="1">vente vif</option>
+            <option value="2">enseignes</option>
+            <option value="3">pas de concurrence</option>
+        </select>
+        <br>
+        <textarea class="textaS" cols="50" rows="4">cite les concurrents : </textarea>
+         
+           <h4>Type  de Contrat</h4>
+        <select class="list" id="contrat">
+            <option>location</option>
+            <option>propriétaire</option>
+            <option>fond de commerce</option>
+        </select>
+        <h4>Loyer Mensuel</h4>
+        <select class="list" id="loyer">
+            <option>250Dt ou moin</option>
+            <option>250Dt<>500dt</option>
+            <option>plus que 500DT</option>
+        </select>
+        <h4>surface </h4>
+        <select class="list" id="surface">
+            <option>25m² ou moin</option>
+            <option>26m²<>35m²</option>
+            <option>plus que 35m²</option>
+        </select>
+    </form>
+        <br>   
+        <button onclick="valider()" id="valider">valider </button>
+        
+        </center>
+    </body>
+    <script src="C:\Users\lenovo g50\Desktop\sopat\validation.js">
+       
+    </script>
+    <script src="firebase.js"></script>
+</html>
